@@ -2,7 +2,7 @@
 const crypto=require('crypto');
 const USER='admin';
 const SALT='c967371616a470565cc0f5c9bad9ef4f';
-const PASS_HASH=Buffer.from('fa1e2bbdd96c3faedd869c2acb7fd4532d771c8a8f84d08773a79f3d85235e5c','hex');
+const PASS_HASH=Buffer.from('a2068156dcd10780158c9945064a4a286626e425619834ee09f80231a8e1d2f8','hex');
 function check(u,p){
   if(String(u||'')!==USER)return false;
   let got;
