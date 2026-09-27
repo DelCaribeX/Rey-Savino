@@ -1,1 +1,1 @@
-module.exports=(req,res)=>{res.setHeader('Set-Cookie','rs_auth=; Path=/; HttpOnly; Secure; SameSite=Lax; Max-Age=0');res.status(200).json({ok:true});};
+module.exports=(req,res)=>{res.setHeader('Cache-Control','no-store');res.setHeader('Set-Cookie','rs_auth=; Path=/; HttpOnly; Secure; SameSite=Strict; Max-Age=0; Priority=High');return res.status(200).json({ok:true});};
